@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garnett Wharfe, Otley</title>
+  <meta name="description" content="Garnett Wharfe, Otley — resident information and request form.">
+  <style>
+    :root {
+      /* Change this one value to change the background colour */
+      --bg: #2f4858;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #2f6f4e;
+      --accent-hover: #255a3f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: var(--card);
+      width: 100%;
+      max-width: 620px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 36px 32px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    p:last-of-type { margin-bottom: 30px; }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 14px 30px;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+
+    .btn:hover { background: var(--accent-hover); }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      .content { padding: 28px 22px 32px; }
+      h1 { font-size: 1.55rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="hero" src="images/entrance-sign.jpg" alt="Garnett Wharfe entrance sign, Otley">
+    <div class="content">
+      <h1>Garnett Wharfe, Otley</h1>
+      <p>Welcome to the Garnett Wharfe residents' page. Use the button below to submit a request, report an issue, or get in touch.</p>
+      <p>Please provide as much detail as you can so we can respond quickly.</p>
+      <a class="btn" href="https://garnettwharfeotley.atlassian.net/jira/software/form/782ea99d-0192-4e6a-afc8-36602322eb90?atlOrigin=eyJpIjoiNWZlZjc3OGUwOTMyNDRkZWE1NWQ5NDQ2NDJmMWY1YjIiLCJwIjoiaiJ9" target="_blank" rel="noopener">Submit a Request</a>
+      <footer>Garnett Wharfe, Otley &middot; garnettwharfeotley.com</footer>
+    </div>
+  </main>
+</body>
+</html>
