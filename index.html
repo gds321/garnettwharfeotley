@@ -80,6 +80,39 @@
 
     .secondary { margin-top: 30px; }
 
+    .content .invite-text { margin: 30px 0 14px; }
+
+    .invite-form {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .invite-input {
+      flex: 1 1 240px;
+      max-width: 320px;
+      padding: 12px 14px;
+      border: 1px solid #cbd2d9;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .btn-grey {
+      background: #6b7280;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .btn-grey:hover { background: #4b5563; }
+
     footer {
       margin-top: 28px;
       font-size: 0.85rem;
@@ -102,6 +135,14 @@
       <a class="btn" href="https://garnettwharfeotley.atlassian.net/jira/software/form/782ea99d-0192-4e6a-afc8-36602322eb90?atlOrigin=eyJpIjoiNWZlZjc3OGUwOTMyNDRkZWE1NWQ5NDQ2NDJmMWY1YjIiLCJwIjoiaiJ9" target="_blank" rel="noopener">Submit a Request</a>
       <p class="secondary">Or if you'd like to review existing issues logged, please click the button below:</p>
       <a class="btn" href="https://garnettwharfeotley.atlassian.net/jira/software/projects/GWI/boards/2" target="_blank" rel="noopener">Review Requests</a>
+      <p class="invite-text">Anyone can raise an Issue, but you need to be invited to review existing requests. To receive an invite please enter your email address below:</p>
+      <form class="invite-form" action="https://formsubmit.co/support@garnettwharfeotley.com" method="POST">
+        <input type="hidden" name="_subject" value="Garnett Wharfe - board access invite request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input class="invite-input" type="email" name="email" placeholder="Enter your email address" required aria-label="Your email address">
+        <button class="btn-grey" type="submit">Submit</button>
+      </form>
       <footer>Garnett Wharfe, Otley &middot; garnettwharfeotley.com</footer>
     </div>
   </main>
